@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Preis-Radar Bremen: project-specific ----
+# Local secrets: ignore every .env variant, but keep the template
+.env.*
+!.env.example
+
+# Data never goes into the repo (raw archive lives outside, see DECISIONS.md D-005)
+data/
+
+# Google Cloud credentials / service-account keys
+*service-account*.json
+gcp-key*.json
